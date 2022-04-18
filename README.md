@@ -1,2 +1,5 @@
-# itutopia-go
-IT乌托邦社区-Go分社
+# IT乌托邦社区-Go分社
+
+
+Go学习资料
+
