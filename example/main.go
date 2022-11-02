@@ -13,5 +13,5 @@ func main() {
 
 	t := new(testing.T)
 	constant.TestConstant(*&t)
-	
+
 }
