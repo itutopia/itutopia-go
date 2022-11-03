@@ -1,7 +1,7 @@
 package main
 
 import (
-	"app/example/go_example/selectes"
+	"app/example/core_example/selectes"
 )
 
 func main() {
