@@ -1,8 +1,6 @@
 package main
 
-import (
-	"app/example/core_example/selectes"
-)
+import "app/example/basic_example/datastract/listes"
 
 func main() {
 	// fmt.Println("hello go")
@@ -71,6 +69,12 @@ func main() {
 	//fmt.Println("main go程结束")
 
 	// 15. select
-	selectes.SelectExample()
+	//selectes.SelectExample()
+
+	// 2. 数据结构
+	// 链表:list
+	//listes.ListExample()
+	//listes.ListStackExample()
+	listes.ListQueueExample()
 
 }
