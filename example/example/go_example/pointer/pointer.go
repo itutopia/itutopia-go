@@ -52,3 +52,24 @@ func modifyAgeScope(age int) {
 	age = 20 // age的作用域只在modifyAgeError函数内
 	fmt.Println("age赋值后的值为:", age)
 }
+
+func SwapPointExample() {
+	/* 定义局部变量 */
+	var x int = 100
+	var y int = 200
+	fmt.Printf("交换前 x 的值为 : %d\n", x)
+	fmt.Printf("交换前 y 的值为 : %d\n", y)
+	/* 通过调用函数来交换值 */
+	swap(&x, &y)
+	fmt.Printf("交换后 x 的值 : %d\n", x)
+	fmt.Printf("交换后 y 的值 : %d\n", y)
+}
+
+/* 定义相互交换值的函数 */
+func swap(x, y *int) int {
+	var temp int
+	temp = *x /* 保存 x 的值 */
+	*x = *y   /* 将 y 值赋给 x */
+	*y = temp /* 将 temp 值赋给 y*/
+	return temp
+}
